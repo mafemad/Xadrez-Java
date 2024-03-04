@@ -12,10 +12,12 @@ public class ChessPiece extends Piece{
 		this.color = color;
 	}
 
-	public String getColor() {
+	public String getColorName() {
 		return color.name();
 	}
 	
-	
+	public Color getColor() {
+		return color;
+	}
 
 }
