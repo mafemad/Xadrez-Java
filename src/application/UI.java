@@ -54,11 +54,19 @@ public class UI {
 		System.out.println();
 		printCapturedPieces(captured);
 		System.out.println("Turno: " + chessMatch.getTurn());
-		String cor = (chessMatch.getCurrentPlayer() == Color.WHITE)? "brancas": "pretas";
-		System.out.println("Esperando movimento das pecas " + cor);
 		
-		if(chessMatch.getCheck()) {
-			System.out.println("CHEQUE!!");
+		if(!chessMatch.getCheckMate()) {			
+			String cor = (chessMatch.getCurrentPlayer() == Color.WHITE)? "brancas": "pretas";
+			System.out.println("Esperando movimento das pecas " + cor);
+			
+			if(chessMatch.getCheck()) {
+				System.out.println("CHEQUE!!");
+			}
+		}
+		else {
+			String cor = (chessMatch.getCurrentPlayer() == Color.WHITE)? "Brancas": "Pretas";
+			System.out.println("CheckMate");
+			System.out.println("Vencedeor: " + cor);
 		}
 	}
 
