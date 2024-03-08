@@ -33,8 +33,13 @@ public class UI {
 	public static final String ANSI_WHITE_BACKGROUND = "\u001B[47m";
 	
 	public static void clearScreen() {
-		System.out.print("\033[H\033[2J");
-		System.out.flush();
+		//System.out.print("\033[H\033[2J"); Para uso do terminal Gitbash
+		//System.out.flush();
+		
+		//Uso no terminal do eclipse
+		for (int i = 0; i<10; i++) {
+			System.out.println();
+		}
 	}
 	
 	public static ChessPosition readChessPosition(Scanner sc) {
