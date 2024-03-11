@@ -48,3 +48,8 @@ O projeto está organizado da seguinte forma:
 
 ![Jogo de xadrez](assets/xadrez.png)
 
+
+## Disposição das classes do projeto, dividida em duas camadas Chess layer e Board layer
+
+![UML](assets/xadrez-uml.png)
+
