@@ -44,4 +44,7 @@ O projeto está organizado da seguinte forma:
 - `King.java`, `Queen.java`, `Rook.java`, `Bishop.java`, `Knight.java`, `Pawn.java`: Classes que representam as diferentes peças do jogo.
 
 
+## Exemplo de como o jogo se dispõe
+
+![Jogo de xadrez](assets/xadrez.png)
 
